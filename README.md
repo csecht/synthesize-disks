@@ -7,10 +7,10 @@
 ### Overview:
 The script `synthdisks.py` is designed to create sets of synthetic randomly augmented images of plain disks to use in YOLO object detection training with custom data. Each image file is saved with a corresponding text file containing the
 bounding box and label data in YOLO format (class, x-center, y-center, h, w).
-To change the desired image size, edit the img_shape variable in `synthdisks.main()` (just below local imports), as needed.
+To change the desired image size, edit the img_shape variable in `synthdisks.main()` (just below local imports), as needed. 
 
 If running from an IDE, edit the main() function to set the desired number of images
-per run and their starting file name index. The current variables are 
+per run and their starting file name index. The default variables are 
 num_image_files = 10 and start_idx = 0.
 
 If running from the command line, uncomment in main() function:
@@ -22,7 +22,7 @@ and comment out:
 start_idx = 0</pre>
 
 ### Usage:
-From within the downloaded repository folder, the recommended command line invocation is : `python3 -m synthdisks` (or `py -m synthdisks` on Windows) for the default vaules of 10 image files starting at index 0. To change the number of image files and/or the starting index, use the command line arguments `--num_files` and `--start_idx` respectively. For example: `python3 -m synthdisks --num_files 400 --start_idx 100` will create 400 image files, automatically names, starting at index number 100. Files are saved to the repository `images` folder.
+From within the downloaded repository folder, the recommended command line invocation is : `python3 -m synthdisks` (or `py -m synthdisks` on Windows) for the default values of 10 image files starting at index 0. To change the number of image files and/or the starting index, use the command line arguments `--num_files` and `--start_idx` respectively. For example: `python3 -m synthdisks --num_files 400 --start_idx 100` will create 400 image files, automatically names, starting at index number 100. Files are saved to the program `saved_images` folder.
 
 To view basic information, author, version, license, etc.: `python3 -m synthdisks --about`
 
